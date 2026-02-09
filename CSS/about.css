@@ -1,0 +1,121 @@
+/* About Us Page Styles */
+
+.page-hero {
+    height: 450px;
+    background-image: url('https://paradisehimalayan.com/public/uploads/frontend/main/jiri-to-everest-base-camp-trek-1597365930865.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.page-hero h1 {
+    font-size: 3.5rem;
+    font-family: var(--font-heading);
+    position: relative;
+    z-index: 1;
+}
+
+.text-content-section {
+    padding: 40px 0;
+}
+
+.text-content-section .container {
+    max-width: 900px;
+}
+
+.text-content-section p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.team-section {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.team-section h2 {
+    text-align: left;
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: var(--font-heading);
+}
+
+.section-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    border: none;
+    margin: 0 0 50px 0;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.team-member {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.member-img {
+    flex: 0 0 200px;
+    height: 200px;
+}
+
+.member-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.member-info {
+    flex: 1;
+}
+
+.member-info h3 {
+    font-size: 1.6rem;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.member-role {
+    display: block;
+    color: #888;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.member-info p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .member-img {
+        width: 100%;
+        height: 300px;
+        flex: none;
+    }
+}
